@@ -110,6 +110,8 @@
 -(UIImageView *)createImageView:(UIImage *)image
 {
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.layer.cornerRadius = 8;
+    imageView.layer.masksToBounds = YES;
     return imageView;
 }
 
